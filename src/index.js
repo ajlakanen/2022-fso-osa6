@@ -36,7 +36,7 @@ const App = () => {
       <button onClick={(e) => store.dispatch({ type: "GOOD" })}>good</button>
       <button onClick={(e) => store.dispatch({ type: "OK" })}>ok</button>
       <button onClick={(e) => store.dispatch({ type: "BAD" })}>bad</button>
-      <button onClick={(e) => store.dispatch({ type: "RESET" })}>
+      <button onClick={(e) => store.dispatch({ type: "ZERO" })}>
         reset stats
       </button>
       <div>good {store.getState().good}</div>
