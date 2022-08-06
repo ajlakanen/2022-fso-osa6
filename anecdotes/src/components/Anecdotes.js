@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { vote } from "../reducers/anecdoteReducer";
 
 const Anecdote = ({ anecdote, handleClick }) => {
+  console.log("anecdote: ", anecdote);
   return (
     <li>
       {anecdote.content}
