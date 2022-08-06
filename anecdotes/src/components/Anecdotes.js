@@ -2,7 +2,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { vote } from "../reducers/anecdoteReducer";
 
 const Anecdote = ({ anecdote, handleClick }) => {
-  console.log("anecdote: ", anecdote);
   return (
     <li>
       {anecdote.content}
@@ -12,9 +11,11 @@ const Anecdote = ({ anecdote, handleClick }) => {
   );
 };
 
-const Anecdotes = () => {
+const AnecdoteList = () => {
   const dispatch = useDispatch();
-  const anecdotes = useSelector((state) => state);
+  const anecdotes = useSelector((state) => state).sort(
+    (a, b) => b.votes - a.votes
+  );
 
   return (
     <ul>
@@ -29,4 +30,4 @@ const Anecdotes = () => {
   );
 };
 
-export default Anecdotes;
+export default AnecdoteList;
