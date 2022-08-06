@@ -2,10 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = "notification";
 
-const notificationReducer = (state = initialState, action) => {
-  return state;
-};
-
 const notificationSlice = createSlice({
   name: "notification",
   initialState,
