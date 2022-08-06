@@ -1,30 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import { createStore } from "redux";
-import reducer from "./reducer";
+import { store } from "./index";
 
-const store = createStore(reducer);
-
-store.dispatch({
-  type: "GOOD",
-});
-store.dispatch({
-  type: "GOOD",
-});
-store.dispatch({
-  type: "GOOD",
-});
-store.dispatch({
-  type: "BAD",
-});
-store.dispatch({
-  type: "BAD",
-});
-store.dispatch({
-  type: "OK",
-});
-
-const App = () => {
+export const App = () => {
   const good = () => {
     store.dispatch({
       type: "GOOD",
@@ -45,11 +22,3 @@ const App = () => {
     </div>
   );
 };
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-const renderApp = () => {
-  root.render(<App />);
-};
-
-renderApp();
-store.subscribe(renderApp);
