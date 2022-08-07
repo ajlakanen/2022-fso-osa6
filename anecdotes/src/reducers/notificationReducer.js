@@ -8,18 +8,17 @@ const notificationSlice = createSlice({
   reducers: {
     showNotification(state, action) {
       console.log("show notif action payload: ", action);
-
-      return action.payload;
+      return action.payload.text;
     },
     hideNotification(state, action) {
-      //if (nextNotificationId - action.payload.id > 1) return state;
+      if (nextNotificationId - action.payload.id > 1) return state;
       return initialState;
     },
   },
 });
 
 let nextNotificationId = 0;
-export const showNotificationWithTimeOut = (dispatch, text) => {
+export const showNotificationWithTimeOut = ({ dispatch, text }) => {
   const id = nextNotificationId++;
   dispatch(showNotification({ id, text }));
   setTimeout(() => {

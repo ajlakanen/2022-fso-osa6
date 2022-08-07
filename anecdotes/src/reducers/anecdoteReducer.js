@@ -19,24 +19,6 @@ const asObject = (anecdote) => {
   };
 };
 
-// export const vote = (id) => {
-//   return {
-//     type: "VOTE",
-//     id: id,
-//   };
-// };
-
-// export const createAnecdote = (content) => {
-//   return {
-//     type: "NEW_ANECDOTE",
-//     data: {
-//       content,
-//       id: getId(),
-//       votes: 0,
-//     },
-//   };
-// };
-
 const initialState = anecdotesAtStart.map(asObject);
 
 const anecdotesSlice = createSlice({
