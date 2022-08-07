@@ -7,19 +7,23 @@ const notificationSlice = createSlice({
   initialState,
   reducers: {
     showNotification(state, action) {
-      setTimeout(() => {
-        console.log("1");
-        hideNotification(state, action);
-      }, 2000);
-      return action.payload;
+      return action.payload.text;
     },
     hideNotification(state, action) {
-      console.log("2");
-
-      return "";
+      if (nextNotificationId - action.payload.id > 1) return state;
+      return initialState;
     },
   },
 });
+
+let nextNotificationId = 0;
+export const showNotificationWithTimeOut = (dispatch, text) => {
+  const id = nextNotificationId++;
+  dispatch(showNotification({ id, text }));
+  setTimeout(() => {
+    dispatch(hideNotification({ id }));
+  }, 2000);
+};
 
 export const { showNotification, hideNotification } = notificationSlice.actions;
 
