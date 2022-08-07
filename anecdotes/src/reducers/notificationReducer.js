@@ -7,10 +7,12 @@ const notificationSlice = createSlice({
   initialState,
   reducers: {
     showNotification(state, action) {
-      return action.payload.text;
+      console.log("show notif action payload: ", action);
+
+      return action.payload;
     },
     hideNotification(state, action) {
-      if (nextNotificationId - action.payload.id > 1) return state;
+      //if (nextNotificationId - action.payload.id > 1) return state;
       return initialState;
     },
   },

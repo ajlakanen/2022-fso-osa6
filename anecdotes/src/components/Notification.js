@@ -9,7 +9,6 @@ const Notification = () => {
     borderWidth: 1,
   };
 
-  //notification !== "" ? <div style={style}> {notification}</div> : <></>;
   if (notification !== "") {
     return <div style={style}> {notification}</div>;
   } else {
