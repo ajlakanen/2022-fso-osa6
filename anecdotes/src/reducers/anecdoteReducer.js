@@ -36,29 +36,50 @@ export const createAnecdote = (content) => {
   };
 };
 
+export const vote = (id) => {
+  return async (dispatch) => {
+    const anecdotesOriginal = await anecdoteService.getAll();
+    const anecdoteToChange = anecdotesOriginal.find((a) => a.id === id);
+    const changedAnecdote = {
+      ...anecdoteToChange,
+      votes: anecdoteToChange.votes + 1,
+    };
+    const response = await anecdoteService.update(id, changedAnecdote);
+    const anecdotesChanged = anecdotesOriginal.map((a) =>
+      a.id !== id ? a : { ...a, votes: a.votes + 1 }
+    );
+    dispatch(setAnecdotes(anecdotesChanged));
+  };
+};
+
 const anecdotesSlice = createSlice({
   name: "anecdotes",
   initialState: [],
   reducers: {
-    vote(state, action) {
-      console.log("state", state);
-      const changed = state.map((anecdote) =>
-        anecdote.id !== action.payload
-          ? anecdote
-          : { ...anecdote, votes: anecdote.votes + 1 }
-      );
-      return changed;
-    },
+    //vote(state, action) {
+    //  // const anecdoteToChange = state.find((a) => a.id === action.payload);
+    //  // const votesIncreased = {
+    //  //   ...anecdoteToChange,
+    //  //   votes: anecdoteToChange.votes + 1,
+    //  // };
+    //  const changed = state.map((anecdote) =>
+    //    anecdote.id !== action.payload
+    //      ? anecdote
+    //      : { ...anecdote, votes: anecdote.votes + 1 }
+    //  );
+    //  return changed;
+    //},
 
     appendAnecdote(state, action) {
       state.push(action.payload);
     },
 
     setAnecdotes(state, action) {
+      console.log("action payload ", action.payload);
       return action.payload;
     },
   },
 });
 
-export const { vote, appendAnecdote, setAnecdotes } = anecdotesSlice.actions;
+export const { appendAnecdote, setAnecdotes } = anecdotesSlice.actions;
 export default anecdotesSlice.reducer;
