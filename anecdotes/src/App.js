@@ -1,4 +1,4 @@
-import { setAnecdotes } from "./reducers/anecdoteReducer";
+import { setAnecdotes, initializeAnecdotes } from "./reducers/anecdoteReducer";
 import { store } from "./store";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
@@ -11,9 +11,11 @@ import Notification from "./components/Notification";
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    anecdoteService.getAll().then((anecdotes) => {
-      store.dispatch(setAnecdotes(anecdotes));
-    });
+    // anecdoteService.getAll().then((anecdotes) => {
+    //   store.dispatch(setAnecdotes(anecdotes));
+    // });
+
+    dispatch(initializeAnecdotes());
   }, []); // Pitäisikö hakasulkeiden sisään laittaa `dispatch`?
 
   return (
