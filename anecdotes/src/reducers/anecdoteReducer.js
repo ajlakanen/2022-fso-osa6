@@ -61,7 +61,6 @@ const anecdotesSlice = createSlice({
     },
 
     setAnecdotes(state, action) {
-      console.log("action payload ", action.payload);
       return action.payload;
     },
   },
