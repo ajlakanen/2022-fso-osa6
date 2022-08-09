@@ -1,5 +1,8 @@
 {
-  "anecdotes": [{ "id": 1, "content": "anecdote1", "likes": 0 }],
+  "anecdotes": [
+    { "id": 1, "content": "anecdote1", "votes": 0 },
+    { "id": 2, "content": "anecdote2", "votes": 3 }
+  ],
   "posts": [
     {
       "id": 1,
