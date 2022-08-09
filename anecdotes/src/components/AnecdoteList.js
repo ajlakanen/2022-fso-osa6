@@ -28,7 +28,10 @@ const AnecdoteList = () => {
             anecdote={anecdote}
             handleClick={() => {
               dispatch(vote(anecdote.id));
-              showNotificationWithTimeOut({ dispatch, text: "voted!" });
+              showNotificationWithTimeOut({
+                dispatch,
+                text: `voted '${anecdote.content}'`,
+              });
             }}
           />
         ))}
