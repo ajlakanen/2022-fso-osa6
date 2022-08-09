@@ -26,14 +26,16 @@ const anecdotesSlice = createSlice({
   initialState: [],
   reducers: {
     createAnecdote(state, action) {
-      const content = action.payload;
-      state.push({
-        content,
-        votes: 0,
-        id: getId(),
-      });
+      // const content = action.payload;
+      // state.push({
+      //   content,
+      //   votes: 0,
+      //   id: getId(),
+      // });
+      state.push(action.payload);
     },
     vote(state, action) {
+      console.log("state", state);
       const changed = state.map((anecdote) =>
         anecdote.id !== action.payload
           ? anecdote

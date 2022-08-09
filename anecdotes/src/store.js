@@ -11,7 +11,3 @@ export const store = configureStore({
     filter: filterReducer,
   },
 });
-
-anecdoteService.getAll().then((anecdotes) => {
-  store.dispatch(setAnecdotes(anecdotes));
-});
