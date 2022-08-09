@@ -56,20 +56,6 @@ const anecdotesSlice = createSlice({
   name: "anecdotes",
   initialState: [],
   reducers: {
-    //vote(state, action) {
-    //  // const anecdoteToChange = state.find((a) => a.id === action.payload);
-    //  // const votesIncreased = {
-    //  //   ...anecdoteToChange,
-    //  //   votes: anecdoteToChange.votes + 1,
-    //  // };
-    //  const changed = state.map((anecdote) =>
-    //    anecdote.id !== action.payload
-    //      ? anecdote
-    //      : { ...anecdote, votes: anecdote.votes + 1 }
-    //  );
-    //  return changed;
-    //},
-
     appendAnecdote(state, action) {
       state.push(action.payload);
     },
