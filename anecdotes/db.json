@@ -3,16 +3,16 @@
     {
       "id": 1,
       "content": "anecdote1",
-      "votes": 10
+      "votes": 11
     },
     {
       "id": 2,
       "content": "anecdote2",
-      "votes": 31
+      "votes": 33
     },
     {
       "content": "asdfasdf",
-      "votes": 4,
+      "votes": 5,
       "id": 3
     },
     {
