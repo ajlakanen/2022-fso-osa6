@@ -3,57 +3,72 @@
     {
       "id": 1,
       "content": "anecdote1",
-      "votes": 5
+      "votes": 10
     },
     {
       "id": 2,
       "content": "anecdote2",
-      "votes": 29
+      "votes": 31
     },
     {
       "content": "asdfasdf",
-      "votes": 0,
+      "votes": 4,
       "id": 3
     },
     {
       "content": "aaff",
-      "votes": 0,
+      "votes": 4,
       "id": 4
     },
     {
       "content": "fdfasd",
-      "votes": 0,
+      "votes": 4,
       "id": 5
     },
     {
       "content": "newww",
-      "votes": 0,
+      "votes": 2,
       "id": 6
     },
     {
       "content": "Kakka",
-      "votes": 1,
+      "votes": 4,
       "id": 7
     },
     {
       "content": "fdasfasdf",
-      "votes": 1,
+      "votes": 4,
       "id": 8
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 4,
       "id": 9
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 4,
       "id": 10
     },
     {
       "content": "",
       "votes": 0,
       "id": 11
+    },
+    {
+      "content": "fff",
+      "votes": 12,
+      "id": 12
+    },
+    {
+      "content": "ffffffffff",
+      "votes": 0,
+      "id": 13
+    },
+    {
+      "content": "",
+      "votes": 11,
+      "id": 14
     }
   ],
   "posts": [
