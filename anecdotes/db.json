@@ -3,7 +3,7 @@
     {
       "id": 1,
       "content": "anecdote1",
-      "votes": 11
+      "votes": 26
     },
     {
       "id": 2,
@@ -12,7 +12,7 @@
     },
     {
       "content": "asdfasdf",
-      "votes": 5,
+      "votes": 12,
       "id": 3
     },
     {
@@ -27,7 +27,7 @@
     },
     {
       "content": "newww",
-      "votes": 2,
+      "votes": 3,
       "id": 6
     },
     {
@@ -57,17 +57,17 @@
     },
     {
       "content": "fff",
-      "votes": 12,
+      "votes": 21,
       "id": 12
     },
     {
       "content": "ffffffffff",
-      "votes": 0,
+      "votes": 3,
       "id": 13
     },
     {
       "content": "",
-      "votes": 11,
+      "votes": 13,
       "id": 14
     }
   ],

@@ -15,9 +15,7 @@ const Anecdote = ({ anecdote, handleClick }) => {
 
 const AnecdoteList = (props) => {
   const dispatch = useDispatch();
-  const anecdotes = useSelector(({ filter, anecdotes }) => {
-    return props.anecdotes;
-  });
+  const anecdotes = props.anecdotes.slice().sort((a, b) => b.votes - a.votes);
 
   return (
     <ul>
