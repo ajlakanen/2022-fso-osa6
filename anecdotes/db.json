@@ -8,11 +8,11 @@
     {
       "id": 2,
       "content": "anecdote2",
-      "votes": 33
+      "votes": 36
     },
     {
       "content": "asdfasdf",
-      "votes": 12,
+      "votes": 13,
       "id": 3
     },
     {
@@ -37,12 +37,12 @@
     },
     {
       "content": "fdasfasdf",
-      "votes": 4,
+      "votes": 5,
       "id": 8
     },
     {
       "content": "",
-      "votes": 4,
+      "votes": 5,
       "id": 9
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 4,
       "id": 11
     },
     {
@@ -62,13 +62,18 @@
     },
     {
       "content": "ffffffffff",
-      "votes": 3,
+      "votes": 4,
       "id": 13
     },
     {
       "content": "",
-      "votes": 13,
+      "votes": 14,
       "id": 14
+    },
+    {
+      "content": "",
+      "votes": 3,
+      "id": 15
     }
   ],
   "posts": [
