@@ -1,4 +1,3 @@
-import { useDispatch } from "react-redux";
 import { vote } from "../reducers/anecdoteReducer";
 import { setNotification } from "../reducers/notificationReducer";
 import { connect } from "react-redux";
@@ -14,7 +13,6 @@ const Anecdote = ({ anecdote, handleClick }) => {
 };
 
 const AnecdoteList = (props) => {
-  const dispatch = useDispatch();
   const anecdotes = props.anecdotes.slice().sort((a, b) => b.votes - a.votes);
 
   return (
@@ -25,7 +23,7 @@ const AnecdoteList = (props) => {
           anecdote={anecdote}
           handleClick={() => {
             props.vote(anecdote.id);
-            dispatch(setNotification(`voted '${anecdote.content}'`, 5));
+            props.setNotification(`voted '${anecdote.content}'`, 5);
           }}
         />
       ))}
@@ -43,6 +41,10 @@ const mapDispatchToProps = (dispatch) => {
   return {
     vote: (value) => {
       dispatch(vote(value));
+    },
+
+    setNotification: (value) => {
+      dispatch(setNotification(value));
     },
   };
 };

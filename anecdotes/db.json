@@ -3,16 +3,16 @@
     {
       "id": 1,
       "content": "anecdote1",
-      "votes": 28
+      "votes": 30
     },
     {
       "id": 2,
       "content": "anecdote2",
-      "votes": 40
+      "votes": 54
     },
     {
       "content": "asdfasdf",
-      "votes": 13,
+      "votes": 14,
       "id": 3
     },
     {
@@ -57,7 +57,7 @@
     },
     {
       "content": "fff",
-      "votes": 21,
+      "votes": 22,
       "id": 12
     },
     {
@@ -82,13 +82,28 @@
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 1,
       "id": 17
     },
     {
       "content": "asdfasdfa",
-      "votes": 0,
+      "votes": 1,
       "id": 18
+    },
+    {
+      "content": "",
+      "votes": 2,
+      "id": 19
+    },
+    {
+      "content": "",
+      "votes": 2,
+      "id": 20
+    },
+    {
+      "content": "gh",
+      "votes": 0,
+      "id": 21
     }
   ],
   "posts": [
