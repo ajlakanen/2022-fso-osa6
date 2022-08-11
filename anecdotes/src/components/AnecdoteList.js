@@ -39,8 +39,12 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = {
-  vote,
+const mapDispatchToProps = (dispatch) => {
+  return {
+    vote: (value) => {
+      dispatch(vote(value));
+    },
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AnecdoteList);
