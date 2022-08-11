@@ -3,57 +3,107 @@
     {
       "id": 1,
       "content": "anecdote1",
-      "votes": 5
+      "votes": 30
     },
     {
       "id": 2,
       "content": "anecdote2",
-      "votes": 29
+      "votes": 54
     },
     {
       "content": "asdfasdf",
-      "votes": 0,
+      "votes": 14,
       "id": 3
     },
     {
       "content": "aaff",
-      "votes": 0,
+      "votes": 4,
       "id": 4
     },
     {
       "content": "fdfasd",
-      "votes": 0,
+      "votes": 4,
       "id": 5
     },
     {
       "content": "newww",
-      "votes": 0,
+      "votes": 4,
       "id": 6
     },
     {
       "content": "Kakka",
-      "votes": 1,
+      "votes": 4,
       "id": 7
     },
     {
       "content": "fdasfasdf",
-      "votes": 1,
+      "votes": 5,
       "id": 8
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 5,
       "id": 9
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 4,
       "id": 10
     },
     {
       "content": "",
-      "votes": 0,
+      "votes": 4,
       "id": 11
+    },
+    {
+      "content": "fff",
+      "votes": 22,
+      "id": 12
+    },
+    {
+      "content": "ffffffffff",
+      "votes": 4,
+      "id": 13
+    },
+    {
+      "content": "",
+      "votes": 14,
+      "id": 14
+    },
+    {
+      "content": "",
+      "votes": 4,
+      "id": 15
+    },
+    {
+      "content": "bfd",
+      "votes": 4,
+      "id": 16
+    },
+    {
+      "content": "",
+      "votes": 1,
+      "id": 17
+    },
+    {
+      "content": "asdfasdfa",
+      "votes": 1,
+      "id": 18
+    },
+    {
+      "content": "",
+      "votes": 2,
+      "id": 19
+    },
+    {
+      "content": "",
+      "votes": 2,
+      "id": 20
+    },
+    {
+      "content": "gh",
+      "votes": 0,
+      "id": 21
     }
   ],
   "posts": [
