@@ -1,12 +1,10 @@
-import { useDispatch } from "react-redux";
+import { connect } from "react-redux";
 import { filterChange } from "../reducers/filterReducer";
 
 const Filter = (props) => {
-  const dispatch = useDispatch();
-
   const handleChange = (event) => {
     // input-kentän arvo muuttujassa event.target.value
-    dispatch(filterChange(event.target.value));
+    props.filterChange(event.target.value);
   };
   const style = {
     marginBottom: 10,
@@ -19,4 +17,4 @@ const Filter = (props) => {
   );
 };
 
-export default Filter;
+export default connect(null, { filterChange })(Filter);
